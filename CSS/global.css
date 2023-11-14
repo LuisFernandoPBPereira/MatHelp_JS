@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(35, 33, 54);
+    color: white;
+    min-height: 100vh;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.master{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: blueviolet;
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;
+
+    border-radius: 0 0 10px 10px;
+    height: 10vh;
+}
+
+.info{
+    text-align: center;
+    margin: 0 100px 0 100px;
+    @media (max-width: 480px){
+        margin: 0 50px 0 50px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin: 0 200px 0 200px;
+    @media (max-width: 480px){
+        margin: 0 50px 0 50px;
+    }
+
+    @media (max-width: 680px){
+        margin: 0 50px 0 50px;
+    }
+}
+
+.background{
+    background-color: rgb(54, 54, 54);
+    padding: 40px 0 40px 0;
+    border-radius: 10px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    
+    background-color: blueviolet;
+    color: white;
+
+    font-weight: 700;
+    font-size: 16px;
+    transition: .5s;
+}
+
+button:hover{
+    padding: 10px 20px 10px 20px;
+    transition: .5s;
+    cursor: pointer;
+    background-color: blue;
+}
+
+input{
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.mainTitle{
+    font-size: 35px;
+    transition: 1s;
+
+}
+
+.mainTitle:hover{
+    font-size: 40px;
+    transition: .5s ease;
+}

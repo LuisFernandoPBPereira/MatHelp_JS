@@ -1,0 +1,22 @@
+.formula{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    background-color: blueviolet;
+
+    border-radius: 10px;
+    width: 240px;
+    height: 100px;
+    transition: .5s;
+}
+
+.formula:hover{
+    background-color: blue;
+    transition: .5s;
+}

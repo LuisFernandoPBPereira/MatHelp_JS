@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <title>MatHelp - Média Aritmética</title>
+</head>
+<body>
+    <div class="master">
+        <header>
+            <a href="../index.html"><h1>MatHelp</h1></a>
+        </header>
+        <section class="info">
+            <h1 class="mainTitle">Média Aritmética</h1>
+            <br>
+            <h2>A soma dos valores, dividos por sua quantidade, é igual a média aritmética. <br> Neste cáluclo envolvemos apenas 3 valores.</h2>
+        </section>
+        <div class="menu background">
+            <form>
+                <div class="values">
+                    <h2>1º valor:</h2>
+                    <input type="number" id="valor1">
+                    <br>
+                </div>
+                <div class="values">
+                    <h2>2º valor:</h2>
+                    <input type="number" id="valor2">
+                    <br>
+                </div>
+                <div class="values">
+                    <h2>3º valor:</h2>
+                    <input type="number" id="valor3">
+                </div>
+                <div class="values">
+                    <button type="submit" onclick="mediaArit()">Calcular</button>
+                </div>
+            </form>
+
+            <section class="values">
+                <h1 id="equacao">(V1 + V2 + V3) / 3 = Média</h1>
+                <br>
+                <h1 id="result">
+                    Média:
+                </h1>
+            </section>
+        </div>
+    </div>
+
+    <script src="../JS/bhaskara.js"></script>
+    <script src="../JS/index.js"></script>
+</body>
+</html>
