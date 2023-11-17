@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <title>MatHelp - Área Triângulo Equilátero</title>
+</head>
+<body>
+    <div class="master">
+        <header>
+            <a href="../index.html"><h1>MatHelp</h1></a>
+        </header>
+        <section class="info">
+            <h1 class="mainTitle">Área do Triângulo Equilátero</h1>
+            <br>
+            <h2>O lado multiplicado pela √3, dividido por 4 é a área do triângulo equilátero! <br> Faça seus cálculos aqui e agora!</h2>
+        </section>
+        <div class="menu background">
+            <form>
+                <div class="values">
+                    <h2>Valor do Lado:</h2>
+                    <input type="number" id="lado">
+                    <br>
+                </div>
+                <div class="values">
+                    <button type="submit" onclick="areaTrianEqui()">Calcular</button>
+                </div>
+            </form>
+
+            <section class="values">
+                <h1 id="equacao">(L² * √3)/4 = Área do Triângulo Equilátero</h1>
+                <br>
+                <h1 id="result">
+                    Área =  
+                </h1>
+            </section>
+        </div>
+    </div>
+
+    <script src="../JS/areaTrianEqui.js"></script>
+    <script src="../JS/index.js"></script>
+</body>
+</html>

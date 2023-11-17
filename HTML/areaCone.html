@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <title>MatHelp - Área Cone</title>
+</head>
+<body>
+    <div class="master">
+        <header>
+            <a href="../index.html"><h1>MatHelp</h1></a>
+        </header>
+        <section class="info">
+            <h1 class="mainTitle">Área do Cone</h1>
+            <br>
+            <h2>π multiplicado pelo raio, que multiplica raio mais a geratriz, é a área do cone! <br> Faça seus cálculos aqui e agora!</h2>
+        </section>
+        <div class="menu background">
+            <form>
+                <div class="values">
+                    <h2>Valor do Raio:</h2>
+                    <input type="number" id="raio">
+                    <br>
+                </div>
+                <div class="values">
+                    <h2>Valor da Geratriz:</h2>
+                    <input type="number" id="geratriz">
+                    <br>
+                </div>
+                <div class="values">
+                    <button type="submit" onclick="areaCone()">Calcular</button>
+                </div>
+            </form>
+
+            <section class="values">
+                <h1 id="equacao">π * r (r + g) = Área do Cone</h1>
+                <br>
+                <h1 id="result">
+                    Área =  
+                </h1>
+            </section>
+        </div>
+    </div>
+
+    <script src="../JS/areaCone.js"></script>
+    <script src="../JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <title>MatHelp - Área Triângulo Retângulo</title>
+</head>
+<body>
+    <div class="master">
+        <header>
+            <a href="../index.html"><h1>MatHelp</h1></a>
+        </header>
+        <section class="info">
+            <h1 class="mainTitle">Área do Triângulo Retângulo</h1>
+            <br>
+            <h2>A base vezes a altura, dividido por 2 é a área do triângulo retângulo! <br> Faça seus cálculos aqui e agora!</h2>
+        </section>
+        <div class="menu background">
+            <form>
+                <div class="values">
+                    <h2>Valor da Base:</h2>
+                    <input type="number" id="base">
+                    <br>
+                </div>
+                <div class="values">
+                    <h2>Valor da Altura:</h2>
+                    <input type="number" id="altura">
+                    <br>
+                </div>
+                <div class="values">
+                    <button type="submit" onclick="areaTrianRetan()">Calcular</button>
+                </div>
+            </form>
+
+            <section class="values">
+                <h1 id="equacao">(B * h)/2 = Área do Triângulo Retângulo</h1>
+                <br>
+                <h1 id="result">
+                    Área =  
+                </h1>
+            </section>
+        </div>
+    </div>
+
+    <script src="../JS/areaTrianRetan.js"></script>
+    <script src="../JS/index.js"></script>
+</body>
+</html>
