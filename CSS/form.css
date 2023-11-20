@@ -2,8 +2,23 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 10px;
+}
+input{
+    width: 200px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button{
+    width: 200px;
+}
+
+.values{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
 }
 
 .result{

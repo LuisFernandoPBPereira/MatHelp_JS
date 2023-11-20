@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/form.css">
-    <title>MatHelp - Teorema de Pitágoras</title>
+    <title>MatHelp - Derivada</title>
 </head>
 <body>
     <div class="master">
@@ -13,36 +13,38 @@
             <a href="../index.html"><h1>MatHelp</h1></a>
         </header>
         <section class="info">
-            <h1 class="mainTitle">Teorema de Pitágoras</h1>
+            <h1 class="mainTitle">Derivada</h1>
             <br>
-            <h2>A hipotenusa ao quadrado é igual a soma dos catetos ao quadrado, <br> agora é com você!</h2>
+            <h2>Aqui vamos aplicar a regra do tombo em derivadas! <br> Porém, coloque um termo de cada vez.</h2>
         </section>
         <div class="menu background">
             <form>
                 <div class="values">
-                    <h2>1º Cateto²:</h2>
-                    <input type="number" id="cateto1">
+                    <h2>Valor multiplicado por X:</h2>
+                    <input type="number" id="valorMultX" placeholder="Ex.: (2x) => Digite '2'">
                     <br>
                 </div>
                 <div class="values">
-                    <h2>2º Cateto²:</h2>
-                    <input type="number" id="cateto2">
+                    <h2>Valor do Expoente:</h2>
+                    <input type="number" id="expo" placeholder="Ex.: (2x) => Digite '1'">
+                    <br>
                 </div>
                 <div class="values">
-                    <button type="submit" onclick="pitagoras()">Calcular</button>
+                    <button type="submit" onclick="derivada()">Calcular</button>
                 </div>
             </form>
 
             <section class="values">
-                <h1 id="equacao">H² = C² + C²</h1>
+                <h1 id="equacao">Ax^n => Ax * n, n-1</h1>
                 <br>
                 <h1 id="result">
-                    Resultado:
+                      
                 </h1>
             </section>
         </div>
     </div>
-    <script src="../JS/pitagoras.js"></script>
+
+    <script src="../JS/derivada.js"></script>
     <script src="../JS/index.js"></script>
 </body>
 </html>

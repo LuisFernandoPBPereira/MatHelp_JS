@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/form.css">
-    <title>MatHelp - Teorema de Pitágoras</title>
+    <title>MatHelp - Distância entre dois pontos</title>
 </head>
 <body>
     <div class="master">
@@ -13,28 +13,39 @@
             <a href="../index.html"><h1>MatHelp</h1></a>
         </header>
         <section class="info">
-            <h1 class="mainTitle">Teorema de Pitágoras</h1>
+            <h1 class="mainTitle">Distância Entre Dois Pontos</h1>
             <br>
-            <h2>A hipotenusa ao quadrado é igual a soma dos catetos ao quadrado, <br> agora é com você!</h2>
+            <h2>Problemas com volume da esfera? Seus problemas acabaram! <br> Agora é com você!</h2>
         </section>
         <div class="menu background">
             <form>
                 <div class="values">
-                    <h2>1º Cateto²:</h2>
-                    <input type="number" id="cateto1">
+                    <h2>X1:</h2>
+                    <input type="number" id="x1">
                     <br>
                 </div>
                 <div class="values">
-                    <h2>2º Cateto²:</h2>
-                    <input type="number" id="cateto2">
+                    <h2>X2:</h2>
+                    <input type="number" id="x2">
+                    <br>
                 </div>
                 <div class="values">
-                    <button type="submit" onclick="pitagoras()">Calcular</button>
+                    <h2>Y1:</h2>
+                    <input type="number" id="y1">
+                    <br>
+                </div>
+                <div class="values">
+                    <h2>Y2:</h2>
+                    <input type="number" id="y2">
+                    <br>
+                </div>
+                <div class="values">
+                    <button type="submit" onclick="distEntrePontos()">Calcular</button>
                 </div>
             </form>
 
             <section class="values">
-                <h1 id="equacao">H² = C² + C²</h1>
+                <h1 id="equacao"></h1>
                 <br>
                 <h1 id="result">
                     Resultado:
@@ -42,7 +53,7 @@
             </section>
         </div>
     </div>
-    <script src="../JS/pitagoras.js"></script>
+    <script src="../JS/volumeEsfera.js"></script>
     <script src="../JS/index.js"></script>
 </body>
 </html>
