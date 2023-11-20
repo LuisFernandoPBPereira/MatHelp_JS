@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/form.css">
-    <title>MatHelp - Área Trapézio</title>
+    <title>MatHelp - Derivada</title>
 </head>
 <body>
     <div class="master">
@@ -13,43 +13,41 @@
             <a href="../index.html"><h1>MatHelp</h1></a>
         </header>
         <section class="info">
-            <h1 class="mainTitle">Área do Trapézio</h1>
+            <h1 class="mainTitle">Derivada</h1>
             <br>
-            <h2>A base maior somado à base menor, multiplicado pela altura, dividido por 2 é a área do trapézio! <br> Faça seus cálculos aqui e agora!</h2>
+            <h2>Aqui vamos aplicar a regra do tombo em derivadas! <br> 
+                Porém, coloque um termo de cada vez. <br><br>
+                Exemplo: Se sua função tiver essa estrutura => 2x² + 3x - 4, calcule polinômio por polinômio (primeiro o 2x², depois o 3x e assim sucessivamente).
+            </h2>
         </section>
         <div class="menu background">
             <form>
                 <div class="values">
-                    <h2>Valor da Base Maior:</h2>
-                    <input type="number" id="baseMaior">
+                    <h2>Valor multiplicado por X:</h2>
+                    <input type="number" id="valorMultX" placeholder="Ex.: (2x) => Digite '2'">
                     <br>
                 </div>
                 <div class="values">
-                    <h2>Valor da Base Menor:</h2>
-                    <input type="number" id="baseMenor">
+                    <h2>Valor do Expoente:</h2>
+                    <input type="number" id="expo" placeholder="Ex.: (2x) => Digite '1'">
                     <br>
                 </div>
                 <div class="values">
-                    <h2>Valor da Altura:</h2>
-                    <input type="number" id="altura">
-                    <br>
-                </div>
-                <div class="values">
-                    <button type="submit" onclick="areaTrapezio()">Calcular</button>
+                    <button type="submit" onclick="derivada()">Calcular</button>
                 </div>
             </form>
 
             <section class="values">
-                <h1 id="equacao">((B + b) h )/2 = Área do Trapézio</h1>
+                <h1 id="equacao">Ax^n => Ax * n, n-1</h1>
                 <br>
                 <h1 id="result">
-                    Área =  
+                      
                 </h1>
             </section>
         </div>
     </div>
 
-    <script src="../JS/areaTrapezio.js"></script>
+    <script src="../JS/derivada.js"></script>
     <script src="../JS/index.js"></script>
 </body>
 </html>

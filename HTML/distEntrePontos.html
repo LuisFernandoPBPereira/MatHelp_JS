@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/form.css">
-    <title>MatHelp - Área Trapézio</title>
+    <title>MatHelp - Distância entre dois pontos</title>
 </head>
 <body>
     <div class="master">
@@ -13,43 +13,47 @@
             <a href="../index.html"><h1>MatHelp</h1></a>
         </header>
         <section class="info">
-            <h1 class="mainTitle">Área do Trapézio</h1>
+            <h1 class="mainTitle">Distância Entre Dois Pontos</h1>
             <br>
-            <h2>A base maior somado à base menor, multiplicado pela altura, dividido por 2 é a área do trapézio! <br> Faça seus cálculos aqui e agora!</h2>
+            <h2>Problemas com volume da esfera? Seus problemas acabaram! <br> Agora é com você!</h2>
         </section>
         <div class="menu background">
             <form>
                 <div class="values">
-                    <h2>Valor da Base Maior:</h2>
-                    <input type="number" id="baseMaior">
+                    <h2>X1:</h2>
+                    <input type="number" id="x1">
                     <br>
                 </div>
                 <div class="values">
-                    <h2>Valor da Base Menor:</h2>
-                    <input type="number" id="baseMenor">
+                    <h2>X2:</h2>
+                    <input type="number" id="x2">
                     <br>
                 </div>
                 <div class="values">
-                    <h2>Valor da Altura:</h2>
-                    <input type="number" id="altura">
+                    <h2>Y1:</h2>
+                    <input type="number" id="y1">
                     <br>
                 </div>
                 <div class="values">
-                    <button type="submit" onclick="areaTrapezio()">Calcular</button>
+                    <h2>Y2:</h2>
+                    <input type="number" id="y2">
+                    <br>
+                </div>
+                <div class="values">
+                    <button type="submit" onclick="distEntrePontos()">Calcular</button>
                 </div>
             </form>
 
             <section class="values">
-                <h1 id="equacao">((B + b) h )/2 = Área do Trapézio</h1>
+                <h1 id="equacao"></h1>
                 <br>
                 <h1 id="result">
-                    Área =  
+                    Resultado:
                 </h1>
             </section>
         </div>
     </div>
-
-    <script src="../JS/areaTrapezio.js"></script>
+    <script src="../JS/distEntrePontos.js"></script>
     <script src="../JS/index.js"></script>
 </body>
 </html>
