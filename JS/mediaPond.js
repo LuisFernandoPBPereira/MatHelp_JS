@@ -25,7 +25,7 @@ function mediaPond() {
 
     //Calculando média ponderada
     let mediaPonderada = calcularMediaPonderada(notas, pesos);
-    resultado.innerHTML = `Média = ${mediaPonderada}`;
+    resultado.innerHTML = `Média = ${mediaPonderada.toFixed(2)}`;
 
 }
 
