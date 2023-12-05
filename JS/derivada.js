@@ -20,12 +20,12 @@ function derivada(){
     else if(novoExpo == 0){
         valorMultX = parseFloat(valorMultX);
         expo = parseFloat(expo);
-        resultado.innerHTML = `A derivada de ${valorMultX}x^${expo} é: ${deriv}`;
+        resultado.innerHTML = `A derivada de ${valorMultX}x é: ${deriv}`;
     }
     else if(novoExpo == 1){
         parseFloat(valorMultX);
         parseFloat(expo);
-        resultado.innerHTML = `A derivada de ${valorMultX}x é: ${deriv}x`;
+        resultado.innerHTML = `A derivada de ${valorMultX}x^${expo} é: ${deriv}x`;
     }
     else if(novoExpo>1){
         parseFloat(valorMultX);
