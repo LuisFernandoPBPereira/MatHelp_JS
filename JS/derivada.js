@@ -17,6 +17,9 @@ function derivada(){
     else if(valorMultX.includes("ln(x)") || valorMultX.includes("lnx")){
         resultado.innerHTML = `A derivada de ln(x) é: 1/x`;
     }
+    else if(expo == 0){
+        resultado.innerHTML = `A derivada de ${valorMultX} é: 0`;
+    }
     else if(novoExpo == 0){
         valorMultX = parseFloat(valorMultX);
         expo = parseFloat(expo);
